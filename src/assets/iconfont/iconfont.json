@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2471331",
+      "name": "按钮",
+      "font_class": "anniu",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "5387392",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "eac4",
+      "unicode_decimal": 60100
+    },
+    {
+      "icon_id": "9149479",
+      "name": "输入框",
+      "font_class": "shurukuang",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "10635076",
+      "name": "单选框-已选",
+      "font_class": "radio-checked",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "12579665",
+      "name": "checkbox-checked",
+      "font_class": "checkbox-checked",
+      "unicode": "e7d3",
+      "unicode_decimal": 59347
+    },
+    {
+      "icon_id": "17692270",
+      "name": "选择器",
+      "font_class": "xuanzeqi",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "18028252",
+      "name": "评分",
+      "font_class": "pingfen",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    }
+  ]
+}

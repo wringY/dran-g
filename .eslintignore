@@ -1,0 +1,9 @@
+# /node_modules/* and /bower_components/* ignored by default
+
+/node_modules
+/public
+/.vscode
+/build
+# app/configs
+# app/components
+# app/pages
