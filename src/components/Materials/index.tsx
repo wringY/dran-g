@@ -11,7 +11,7 @@ import insideMaterials from './InsideMaterials'
 
 export interface MaterialIterface {
     component: React.FC<any>
-    icon: string
+    icon: string | React.FC<any>
     label: string
     id: string
     style: React.CSSProperties

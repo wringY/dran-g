@@ -20,8 +20,9 @@ export interface MaterialIterface {
     }
 }
 ~~~
+## 自定义组件
 ## 使用内置组件扩展
 ## 接入第三方ui库
-## 
+## 素材扩展
 # 画布
 # 属性编辑

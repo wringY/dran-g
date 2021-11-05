@@ -8,6 +8,7 @@
 import * as Materials from '@material-ui/core'
 import { MaterialIterface } from '../index'
 const materialsId = 'inside-material-'
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
 const items = [
     {
@@ -65,6 +66,14 @@ const items = [
         props: {},
         label: '选择器',
         icon: 'xuanzeqi'
+    },
+    {
+        type: 'List',
+        style: {},
+        id: materialsId + 'list',
+        props: {},
+        label: '选择器',
+        icon: AccessAlarmIcon
     }
 ]
 

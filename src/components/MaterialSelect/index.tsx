@@ -15,20 +15,38 @@
 import * as React from 'react'
 import MaterialList from '../Materials'
 import styles from './index.less'
-import Kind from './Kinds'
+import Category from './Category'
+import ExpandMaterials from '@/components/Materials/ExpandMaterials'
+const { useState } = React
 
 const MateriaSelect = () => {
+    const [isShowExpand, setShow] = useState(false)
+    const [type, setType] = useState('customreMaterials')
+    const initExpand = (type: string) => {
+        setType(type)
+        setShow(true)
+    }
+    const handleClose = () => {
+        setShow(false)
+    }
+
     return (
         <div className={styles.materialSelect}>
             {Object.keys(MaterialList).map(type => {
                 return (
-                    <Kind
+                    <Category
+                        initExpand={initExpand}
                         key={type}
                         materials={MaterialList[type]}
                         type={type}
                     />
                 )
             })}
+            <ExpandMaterials
+                handleClose={handleClose}
+                open={isShowExpand}
+                type={type}
+            />
         </div>
     )
 }

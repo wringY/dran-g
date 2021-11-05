@@ -9,12 +9,8 @@ import * as React from 'react'
 import ToolBar from '@/components/ToolBar'
 import MateriaSelect from '@/components/MaterialSelect'
 import styles from './index.less'
-import Test from '@/components/Materials/InsideMaterials'
-
-
 
 const Index = () => {
-   
     return (
         <div className={styles.lowPageContainer}>
             {/* 顶部工具栏 */}
