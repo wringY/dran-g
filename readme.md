@@ -2,8 +2,8 @@
  * @Desc:
  * @Author: wringY
  * @Date: 2021-05-26 01:50:21
- * @LastEditTime: 2021-11-03 22:11:52
- * @FilePath: \my-app-ts\readme.md
+ * @LastEditTime: 2021-11-06 12:45:29
+ * @FilePath: \dran-g\readme.md
 -->
 # 物料库
 - 使用自定义组件和内置material组件库，做为物料库。支持使用其它的UI库（CDN引入）
@@ -22,7 +22,7 @@ export interface MaterialIterface {
 ~~~
 ## 自定义组件
 ## 使用内置组件扩展
-## 接入第三方ui库
-## 素材扩展
+## 接入第三方ui库 todo
+## 素材扩展 todo
 # 画布
 # 属性编辑

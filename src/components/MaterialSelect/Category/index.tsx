@@ -1,3 +1,10 @@
+/*
+ * @Desc:
+ * @Author: wringY
+ * @Date: 2021-11-05 11:16:25
+ * @LastEditTime: 2021-11-06 14:31:16
+ * @FilePath: \dran-g\src\components\MaterialSelect\Category\index.tsx
+ */
 import * as React from 'react'
 import { MaterialIterface } from '../../Materials'
 import styles from '../index.less'
