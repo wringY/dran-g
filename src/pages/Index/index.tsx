@@ -9,7 +9,7 @@ import * as React from 'react'
 import ToolBar from '@/components/ToolBar'
 import MateriaSelect from '@/components/MaterialSelect'
 import styles from './index.less'
-import Editor from '@/components/Editor'
+import Canvas from '@/components/Canvas'
 
 const Index = () => {
     return (
@@ -18,13 +18,15 @@ const Index = () => {
             <ToolBar />
             <main className={styles.main}>
                 {/* 左侧物料选择 */}
-                <section style={{ height: '100%' }}>
+                <section className={styles.left}>
                     <MateriaSelect />
                 </section>
                 {/* 画布 */}
-                <section>
-                    <Editor />
+                <section className={styles.center}>
+                    <Canvas />
                 </section>
+                {/* 属性编辑 */}
+                <section className={styles.right}>属性</section>
             </main>
         </div>
     )

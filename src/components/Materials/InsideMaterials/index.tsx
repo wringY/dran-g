@@ -7,13 +7,11 @@
  */
 import * as Materials from '@material-ui/core'
 import { MaterialIterface } from '../index'
-const materialsId = 'inside-material-'
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm'
 
 const items = [
     {
         type: 'Button',
-        id: materialsId + 'button',
         style: {},
         props: {},
         label: '按钮',
@@ -21,7 +19,6 @@ const items = [
     },
     {
         type: 'Checkbox',
-        id: materialsId + 'checkbox',
         style: {},
         props: {},
         label: '复选框',
@@ -29,7 +26,6 @@ const items = [
     },
     {
         type: 'Fab',
-        id: materialsId + 'fab',
         style: {},
         props: {},
         label: '浮动操作按钮',
@@ -38,7 +34,6 @@ const items = [
     {
         type: 'Input',
         style: {},
-        id: materialsId + 'input',
         props: {},
         label: '输入框',
         icon: 'shurukuang'
@@ -47,14 +42,12 @@ const items = [
         type: 'RadioGroup',
         style: {},
         props: {},
-        id: materialsId + 'radio',
         label: '单选框',
         icon: 'radio-checked'
     },
     {
         type: 'Rating',
         style: {},
-        id: materialsId + 'rating',
         props: {},
         label: '评分',
         icon: 'pingfen'
@@ -62,7 +55,6 @@ const items = [
     {
         type: 'Select',
         style: {},
-        id: materialsId + 'select',
         props: {},
         label: '选择器',
         icon: 'xuanzeqi'
@@ -70,7 +62,6 @@ const items = [
     {
         type: 'List',
         style: {},
-        id: materialsId + 'list',
         props: {},
         label: '选择器',
         icon: AccessAlarmIcon
@@ -78,11 +69,10 @@ const items = [
 ]
 
 const insideMaterials: MaterialIterface[] = items.map(item => {
-    const { type, style, props, id, label, icon } = item
+    const { type, style, props, label, icon } = item
     return {
         component: Materials[type],
         style,
-        id,
         props,
         label,
         icon

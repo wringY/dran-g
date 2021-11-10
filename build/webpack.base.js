@@ -97,7 +97,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
                 exclude: /node_modules/,
                 include: [resolve('../src')],
                 loader: 'url-loader',
@@ -108,13 +108,17 @@ module.exports = {
                 }
               },
             {
-                test: /\.(woff|eot|ttf|svg|gif)$/,
+                test: /\.(woff|eot|ttf|gif)$/,
                 loader: 'url-loader',
                 options: {
                   limit: 8192,
                   name: 'font/[name].[hash:4].[ext]'
                 }
             },
+            {
+              test: /\.svg$/,
+              use: ['@svgr/webpack'],
+            }
         ]
     },
     plugins: [

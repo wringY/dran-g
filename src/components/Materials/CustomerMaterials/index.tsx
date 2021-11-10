@@ -8,11 +8,9 @@
 import CImg from './Img'
 import CButton from './Button'
 import { MaterialIterface } from '../index'
-const materialsId = 'customer-material-'
 const customreMaterials: MaterialIterface[] = [
     {
         component: CButton,
-        id: materialsId + 'button',
         style: {
             width: 100
         },
@@ -22,7 +20,6 @@ const customreMaterials: MaterialIterface[] = [
     },
     {
         component: CImg,
-        id: materialsId + 'img',
         style: {},
         props: {
             src: require('@/assets/imgs/test.webp')

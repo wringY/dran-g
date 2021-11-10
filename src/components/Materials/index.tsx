@@ -13,7 +13,6 @@ export interface MaterialIterface {
     component: React.FC<any>
     icon: string | React.FC<any>
     label: string
-    id: string
     style: React.CSSProperties
     props: {
         [key: string]: any
