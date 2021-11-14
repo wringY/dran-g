@@ -1,8 +1,19 @@
+/*
+ * @Desc:
+ * @Author: wringY
+ * @Date: 2021-11-05 10:40:44
+ * @LastEditTime: 2021-11-14 11:21:55
+ * @FilePath: \dran-g\src\store\index.tsx
+ */
 // 使用react-redux 来管理应用状态
-import { createStore, combineReducers } from 'redux'
+import { createStore, combineReducers, Store } from 'redux'
 import componentDataReducer from './reducer'
-interface StoreInterface {
-    componentData: any[]
+import { MaterialIterface } from '../components/Materials/index'
+
+/* 画布数据类型 */
+export type ComponentDataType = MaterialIterface & { id: number }
+export interface StoreInterface {
+    componentData: ComponentDataType[]
 }
 
 const initValues: StoreInterface = {
@@ -12,5 +23,5 @@ const reducer = combineReducers({
     componentData: componentDataReducer
 })
 
-const store = createStore(reducer, initValues)
+const store: Store = createStore(reducer, initValues as any)
 export default store

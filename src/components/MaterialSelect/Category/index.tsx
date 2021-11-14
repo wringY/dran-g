@@ -37,9 +37,17 @@ const Category: React.FC<Categorynterface> = ({
                 />
             </p>
             <div>
-                {materials.map(c => {
-                    const { id, label, icon } = c
-                    return <Item icon={icon} id={id} key={id} label={label} />
+                {materials.map((c, idx) => {
+                    const { label, icon } = c
+                    return (
+                        <Item
+                            icon={icon}
+                            idx={idx}
+                            key={idx}
+                            label={label}
+                            type={type}
+                        />
+                    )
                 })}
             </div>
         </div>

@@ -11,6 +11,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+:global(.icon-pointer:before) {
+    content: "\e934";
+}
+
 :global(.icon-anniu:before) {
     content: "\e665";
 }
@@ -38,4 +42,3 @@
 :global(.icon-pingfen:before) {
     content: "\e61d";
 }
-

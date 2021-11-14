@@ -9,10 +9,14 @@ import { MaterialIterface } from '../../Materials'
 import * as React from 'react'
 import styles from './index.less'
 
-type ItemType = Omit<MaterialIterface, 'component' | 'props' | 'style'>
-const Item: React.FC<ItemType> = ({ label, icon, id }) => {
+type ItemType = Omit<MaterialIterface, 'component' | 'props' | 'style'> & {
+    type: string
+    idx: number
+}
+const Item: React.FC<ItemType> = ({ label, icon, type, idx }) => {
     const handleDrap: React.DragEventHandler = e => {
-        e.dataTransfer.setData('materialId', id)
+        e.dataTransfer.setData('index', String(idx))
+        e.dataTransfer.setData('materialType', type)
     }
 
     const render = () => {
